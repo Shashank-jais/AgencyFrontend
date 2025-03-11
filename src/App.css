@@ -1,0 +1,30 @@
+main {
+    background-color: #858d96;
+}
+
+.mainBody {
+    background-color: #242529;
+
+}
+
+/* App.css */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+main {
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    display: flex;
+    overflow: hidden;
+    /* Prevent scrolling */
+    background-color: #858d96;
+}
