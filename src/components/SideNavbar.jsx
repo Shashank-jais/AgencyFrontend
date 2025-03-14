@@ -59,11 +59,10 @@ const SideNavbar = () => {
                 </div>
                 <nav>
                     <ul className='space-y-4 mt-4'>
-                        <NavItem to="/home" icon={<FaChartBar />} text="Dashboard" location={location} />
-                        <NavItem to="/summary" icon={<FaCalculator />} text="Summary Report" location={location} />
-                        <NavItem to="/employees" icon={<FaUsers />} text="Employees" location={location} />
-                        <NavItem to="/calendar" icon={<FaCalendarAlt />} text="Calendar" location={location} />
-                        <NavItem to="/settings" icon={<FaCog />} text="Settings" location={location} />
+                        <NavItem to="/home" icon={<FaChartBar color='cyan'/>} text="Dashboard" location={location} />
+                        <NavItem to="/summary" icon={<FaCalculator color='cyan' />} text="Summary Report" location={location} />
+                        <NavItem to="/employees" icon={<FaUsers color='cyan' />} text="Employees" location={location} />
+                        <NavItem to="/weightcalculator" icon={<FaCalendarAlt color='cyan' />} text="Weight Calculator" location={location} />
                     </ul>
                 </nav>
                 <button className="flex items-center space-x-2 text-red-400 mt-6 hover:text-red-600 p-3" onClick={handleLogout}>

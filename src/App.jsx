@@ -11,21 +11,21 @@ function App() {
   const [login, setLogin] = useState(true);
 
   const setLoginform = () => {
-    setLogin((prev) => !prev); 
+    setLogin((prev) => !prev);
   };
 
   useEffect(() => {
-    setLoginform(); 
+    setLoginform();
   }, []);
 
   return (
     <Context.Provider value={{ setLoginform }}>
+      <Toaster position="top-right" />
       <main className='md:flex min-h-screen w-screen md:gap-0'>
         {!login ? (
           <Login />
         ) : (
           <>
-            <Toaster position="top-right"/>
             <div className='mainBody md:m-3 md:mr-0 md:w-100 md:rounded-4xl flex bg-[#242529]'>
               <SideNavbar />
             </div>

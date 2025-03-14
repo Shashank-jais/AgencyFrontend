@@ -57,13 +57,13 @@ const Home = () => {
       toast.error("Please fill all fields");
       return;
     }
-    if (data.center != user.agencyNo) {
+    if (user.agencyNo != 101 && data.center != user.agencyNo) {
       toast.error("Wrong CenterID!");
       return;
     }
-    
 
-    
+
+
     const transformData = {
       agencyId: data.center,
       agencyData: {
@@ -152,12 +152,16 @@ const Home = () => {
   }
 
   useEffect(() => {
-    fetchTotalDetails()
+    {
+      if (user.role === 'ADMIN') {
+        fetchTotalDetails()
+      }
+    }
   }, [])
 
 
   return (
-    <div className="bg-backBackground md:pt-6 pt-0 w-full h-full overflow-y-auto">
+    <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto">
       {loading ? (
         <div className="bg-[#363740] bg-opacity-50 p-6 rounded-xl shadow-md w-full max-w-full h-full flex items-center justify-center">
           <FaSpinner className="animate-spin text-green-500 text-3xl" />

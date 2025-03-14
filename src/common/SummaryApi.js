@@ -25,6 +25,22 @@ const SummaryApi = {
     logout:{
         url: `${baseURL}/api/user/logout`,
         method: 'get'
+    },
+    recordbyagencyid:{
+        url: `${baseURL}/api/recordbyagencyid`,
+        method: 'post'
+    },
+    updaterecord:{
+        url: `${baseURL}/api/updaterecord`,
+        method: 'post'
+    },
+    createUser:{
+        url:`${baseURL}/api/user/register`,
+        method:'post'
+    },
+    allUser:{
+        url:`${baseURL}/api/user/allUser`,
+        method:'get'
     }
 
 }
