@@ -55,7 +55,7 @@ const SideNavbar = () => {
                 md:translate-x-0 md:block transition-transform duration-300 ease-in-out
             `}>
                 <div className='flex justify-center items-center mb-6'>
-                    <h1 className="text-xl font-bold text-white">Amar Ujala</h1>
+                    <h1 className="text-xl font-bold text-white">PressLedger</h1>
                 </div>
                 <nav>
                     <ul className='space-y-4 mt-4'>
