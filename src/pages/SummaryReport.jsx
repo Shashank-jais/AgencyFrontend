@@ -140,7 +140,7 @@ const SummaryReport = () => {
 
 
     return (
-        <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto">
+        <div className="bg-backBackground md:pt-6 pt-10 w-full min-h-screen overflow-y-auto pl-1 pr-1">
             <header>
                 <div className="mb-8">
                     <h1 className="text-white font-bold text-4xl">Summary</h1>
@@ -197,8 +197,9 @@ const SummaryReport = () => {
 
 
             {/* Passbook */}
-            <PassbookReport agencyData={sampleData.agencyData} agencyDifferenceData={sampleData.agencyDifferenceData} agencyNo={data.agencyId} />
-
+            <div className="w-full h-full md:h-max overflow-auto">
+                <PassbookReport agencyData={sampleData.agencyData} agencyDifferenceData={sampleData.agencyDifferenceData} agencyNo={data.agencyId} />
+            </div>
 
         </div>
     )

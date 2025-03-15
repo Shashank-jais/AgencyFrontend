@@ -40,7 +40,7 @@ const WeightCalculator = () => {
     const validateDifference = differenceData.new.trim() !== "" && differenceData.page.trim() !== "" && differenceData.rate.trim() !== "";
 
     return (
-        <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto">
+        <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto mb-60 md:mb-0">
             <header>
                 <div className="mb-8">
                     <h1 className="text-white font-bold text-4xl">Calculator</h1>

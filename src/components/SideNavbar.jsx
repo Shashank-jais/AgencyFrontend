@@ -54,8 +54,8 @@ const SideNavbar = () => {
                 transform ${isOpen ? "translate-x-2" : "-translate-x-full"} 
                 md:translate-x-0 md:block transition-transform duration-300 ease-in-out
             `}>
-                <div className='flex justify-center items-center mb-6'>
-                    <h1 className="text-xl font-bold text-white">PressLedger</h1>
+                <div className='flex justify-center items-center mb-6 pt-8 md:pt-0'>
+                    <h2 className="text-2xl md:text-3xl font-bold text-white">PressLedger</h2>
                 </div>
                 <nav>
                     <ul className='space-y-4 mt-4'>

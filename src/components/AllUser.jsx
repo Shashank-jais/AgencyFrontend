@@ -10,13 +10,13 @@ const AllUser = ({ users }) => {
                 <div className="w-full bg-[#363740] p-3 mb-4 flex flex-row items-center justify-between rounded-md">
                     <h2 className="text-md md:text-2xl font-semibold text-white">Agency Staff</h2>
                     {!open ? (
-                        <button onClick={() => { setOpen(!open) }}>
-                            <HiChevronDoubleDown size={20} color="cyan" className="mr-2 md:mr-8" />
-                        </button>
+
+                        <HiChevronDoubleDown size={20} color="cyan" className="mr-2 md:mr-8" />
+
                     ) : (
-                        <button onClick={() => { setOpen(!open) }}>
-                            <HiChevronDoubleUp size={20} color="cyan" className="mr-2 md:mr-8" />
-                        </button>
+
+                        <HiChevronDoubleUp size={20} color="cyan" className="mr-2 md:mr-8" />
+
                     )}
                 </div>
             </button>
@@ -26,7 +26,7 @@ const AllUser = ({ users }) => {
             {
                 open &&
                 (
-                    <div className="overflow-x-auto">
+                    <div className="overflow-x-auto overflow-y-auto ">
                         <table className="min-w-full border border-gray-700 text-sm">
                             <thead>
                                 <tr className="bg-gray-800">

@@ -126,9 +126,9 @@ const Employees = () => {
 
 
     return (
-        <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto">
+        <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto ">
             {user.role === 'USER' ? (
-                <div className='w-full h-full flex items-center justify-center'>
+                <div className='w-full min-h-full flex items-center justify-center'>
                     <h2 className='text-red-600 p-5'>You are not allowed to user this feature.</h2>
                 </div>
             ) :
@@ -201,8 +201,9 @@ const Employees = () => {
                                 )}
                             </div>
                         </div>
-                        <AllUser users={sampleData.users} />
-
+                        <div className="w-full h-full md:h-max overflow-auto">
+                            <AllUser users={sampleData.users} />
+                        </div>
                     </>
                 )
             }

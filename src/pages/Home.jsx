@@ -161,7 +161,7 @@ const Home = () => {
 
 
   return (
-    <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto">
+    <div className="bg-backBackground md:pt-6 pt-10 w-full h-full overflow-y-auto mb-60 md:mb-0">
       {loading ? (
         <div className="bg-[#363740] bg-opacity-50 p-6 rounded-xl shadow-md w-full max-w-full h-full flex items-center justify-center">
           <FaSpinner className="animate-spin text-green-500 text-3xl" />
@@ -427,7 +427,7 @@ const Home = () => {
           </div> */}
 
 
-          <div className='grid md:grid-cols-3 grid-cols-1 gap-9 w-full mt-3'>
+          <div className='grid md:grid-cols-3 grid-cols-1 gap-9 w-full mt-3 '>
             {agencyData.map((agency) => (
               <div key={agency.agencyId} className='min-h-full rounded-xl bg-[#363740] p-5'>
                 <div className='flex justify-center items-center mb-2'>
