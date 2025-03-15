@@ -1,4 +1,4 @@
-export const baseURL = "https://ujalabackend.vercel.app/"
+export const baseURL = "https://ujalabackend.vercel.app"
 
 
 const SummaryApi = {
