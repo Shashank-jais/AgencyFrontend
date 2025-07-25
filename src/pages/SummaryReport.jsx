@@ -8,7 +8,7 @@ import { saveAs } from 'file-saver';
 
 const SummaryReport = () => {
     const agencyMapping = {
-        "123": "Polytechnic",
+        "102": "Polytechnic",
         "124": "Indira Nagar",
         "1": "Gomti Nagar"
     };

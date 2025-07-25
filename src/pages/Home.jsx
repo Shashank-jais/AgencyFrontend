@@ -17,7 +17,7 @@ const Home = () => {
   const user = useSelector((state) => state?.user)
   const [loading, setLoading] = useState(false);
   const agencyMapping = {
-    "123": "Polytechnic",
+    "102": "Polytechnic",
     "124": "Indira Nagar",
     "1": "Gomti Nagar"
   };
