@@ -34,7 +34,7 @@ const PassbookReport = ({ agencyNo, agencyData, agencyDifferenceData }) => {
   const validateValue = Object.values(data).every((el) => el);
 
   const agencyMapping = {
-    "123": "Polytechnic",
+    "102": "Polytechnic",
     "124": "Indira Nagar",
     "1": "Gomti Nagar"
   };
