@@ -55,7 +55,7 @@ const PassbookReport = ({ agencyNo, agencyData, agencyDifferenceData }) => {
       toast.error("Please fill all fields");
       return;
     }
-    if (user.agencyNo != 1 && data.center != user.agencyNo) {
+    if (user.agencyNo != 101 && data.center != user.agencyNo) {
       toast.error("Wrong CenterID!");
       return;
     }
